@@ -1,0 +1,61 @@
+
+*.java   text eol=lf
+*.xml    text eol=lf
+*.pom    text eol=lf
+
+*.apt    text eol=lf
+*.xdoc   text eol=lf
+*.fml    text eol=lf
+
+*.txt    text eol=lf
+*.csv    text eol=lf
+*.log    text eol=lf
+*.properties text eol=lf
+*.cfg    text eol=lf
+
+*.sql    text eol=lf
+*.xsd    text eol=lf
+*.xjb    text eol=lf
+*.wsdl   text eol=lf
+*.xmi    text eol=lf
+*.xsl    text eol=lf
+*.xslt   text eol=lf
+*.svg    text eol=lf
+
+*.htm    text eol=lf
+*.html   text eol=lf
+*.shtml  text eol=lf
+*.jsp    text eol=lf
+*.css    text eol=lf
+*.js     text eol=lf
+
+*.sh     text eol=lf
+*.bat    text eol=crlf
+
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.gif    binary
+*.ico    binary
+
+*.class  binary
+*.jar    binary
+*.war    binary
+*.ear    binary
+*.zip    binary
+*.tar    binary
+*.gz     binary
+
+*.doc    binary
+*.docx   binary
+*.xls    binary
+*.xlsx   binary
+*.ppt    binary
+*.pptx   binary
+*.pdf    binary
+*.ps     binary
+*.eap    binary
+
+*.eot    binary
+*.ttf    binary
+*.woff   binary

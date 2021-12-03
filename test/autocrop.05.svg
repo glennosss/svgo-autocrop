@@ -1,0 +1,17 @@
+11x11 box.
+
+===
+
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="11" height="11" fill="#000"/>
+</svg>
+
+@@@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
+    <rect x="0" y="0" width="11" height="11" fill="#000"/>
+</svg>
+
+@@@
+
+{"includeWidthAndHeightAttributes": false, "debug": false, "debugWriteFiles": false}
