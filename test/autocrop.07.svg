@@ -8,8 +8,8 @@
 
 @@@
 
-<svg viewBox="4 4 12 12" xmlns="http://www.w3.org/2000/svg">
-    <rect x="5" y="5" width="10" height="10" stroke="#000" stroke-width="1" stroke-linecap="square"/>
+<svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="10" height="10" stroke="#000" stroke-width="1" stroke-linecap="square"/>
 </svg>
 
 @@@

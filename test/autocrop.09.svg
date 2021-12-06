@@ -1,0 +1,17 @@
+10x10 box - viewBox - padding 1px.
+
+===
+
+<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5" y="5" width="10" height="10" fill="#000"/>
+</svg>
+
+@@@
+
+<svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="10" height="10" fill="#000"/>
+</svg>
+
+@@@
+
+{"padding": 1, "debug": false, "debugWriteFiles": false}
