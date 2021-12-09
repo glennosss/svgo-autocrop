@@ -2,7 +2,7 @@
 
 const AutocropUtils = require('./lib/AutocropUtils');
 
-exports.type = 'full';
+exports.type = 'visitor';
 exports.name = 'autocrop';
 exports.active = true;
 exports.description = 'reduce viewBox to minimum possible size so no wasted transparent space around svg';
@@ -22,5 +22,6 @@ exports.description = 'reduce viewBox to minimum possible size so no wasted tran
  * @author Glennos
  */
 exports.fn = (ast, params, info) => {
-	return AutocropUtils.plugin(ast, params, info);
+	AutocropUtils.plugin(ast, params, info);
+	return null;
 };
