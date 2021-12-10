@@ -18,7 +18,7 @@ Fix color on 'icon-43-note-remove.svg'
 @@@
 
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!--Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch-->
     <title>icon 43 note remove</title>
     <desc>
@@ -34,4 +34,4 @@ Fix color on 'icon-43-note-remove.svg'
 
 @@@
 
-{"removeClass": true, "removeDeprecated": true, "setColor": "blue", "setColorIssue": "fail"}
+{"removeClass": true, "removeStyle": true, "removeDeprecated": true, "setColor": "blue", "setColorIssue": "fail"}

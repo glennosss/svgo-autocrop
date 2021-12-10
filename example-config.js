@@ -10,20 +10,6 @@ const autocrop = require('svgo-autocrop');
 module.exports = {
   multipass: true, // Keep running optimisations until doesn't optimise anymore.
   plugins: [
-	{ // Run autocrop first
-		...autocrop,
-		params: {
-			autocrop: true,
-			includeWidthAndHeightAttributes: false, // Same as enabling 'removeDimensions' plugin below.
-
-			removeClass: true, // Remove 'class' attribute if encountered.
-			removeDeprecated: true, // Remove deprecated attributes - like <svg version/baseProfile>/etc.
-
-			setColor: 'currentColor', // Replace any colors encountered with 'currentColor'.
-			setColorIssue: 'fail' // Fail if more than one color encountered.
-		}
-	},
-
     { // Include default optimisations
       name: 'preset-default',
       params: {
@@ -34,7 +20,7 @@ module.exports = {
       },
     },
 
-	// Remove width/height attributes and add the viewBox attribute if it's missing
+	// Remove width/height attributes and add the viewBox attribute if it's missing. Highly recommended so the <svg> scales!
 	'removeDimensions', // https://github.com/svg/svgo/blob/master/plugins/removeDimensions.js
 
 	// Sort attributes - helps with readability/compression.
@@ -44,9 +30,24 @@ module.exports = {
 	'convertStyleToAttrs', // https://github.com/svg/svgo/blob/master/plugins/convertStyleToAttrs.js
 
 	// Remove <style> if present in svg
-	//'removeStyleElement', // https://github.com/svg/svgo/blob/master/plugins/removeStyleElement.js
+	'removeStyleElement', // https://github.com/svg/svgo/blob/master/plugins/removeStyleElement.js
 
 	// Remove <script> if present in svg
-	'removeScriptElement' // https://github.com/svg/svgo/blob/master/plugins/removeScriptElement.js
+	'removeScriptElement', // https://github.com/svg/svgo/blob/master/plugins/removeScriptElement.js
+
+	{ // Run autocrop last (you'll get less issues if autocrop runs after the svgo's default 'convertTransform' and 'convertShapeToPath' plugins)
+		...autocrop,
+		params: {
+			autocrop: true,
+			includeWidthAndHeightAttributes: false, // Same as enabling 'removeDimensions' plugin (and disabling 'removeViewBox' plugin).
+
+			removeClass: true, // Remove 'class' attribute if encountered.
+			removeStyle: true, // Remove 'style'/'font-family' attribute if encountered.
+			removeDeprecated: true, // Remove deprecated attributes - like <svg version/baseProfile>/etc.
+
+			setColor: 'currentColor', // Replace any colors encountered with 'currentColor'.
+			setColorIssue: 'fail' // Fail if more than one color encountered.
+		}
+	},
   ]
 };

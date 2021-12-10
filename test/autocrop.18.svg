@@ -10,7 +10,7 @@ Change all colors to 'currentColor' - also disable autocrop.
 
 @@@
 
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" color="currentColor" fill="currentColor" stroke="currentColor" viewBox="0 0 200 200">
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" viewBox="0 0 200 200">
     <line x1="40" x2="120" y1="20" y2="20" stroke="currentColor" stroke-width="20" stroke-linecap="butt" fill="currentColor"/>
     <line x1="40" x2="120" y1="60" y2="60" stroke="currentColor" stroke-width="20" stroke-linecap="square"/>
     <line x1="40" x2="120" y1="100" y2="100" stroke="currentColor" stroke-width="20" stroke-linecap="square" stop-color="currentColor" flood-color="currentColor" lighting-color="currentColor"/>
